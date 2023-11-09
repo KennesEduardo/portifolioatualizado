@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #263138;
+    --botao-azul: #167BF7;
+    --cor-da-fonte-principal: #445964;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito:#3c92fa;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--branco-principal);
+    color: var(--cor-da-fonte-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* Inicio do menu */
+.cabecalho{
+    background-color: var(--branco-principal);
+    color: var(--cor-da-fonte-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+    width: 100vw;
+    height: 10vh;
+}
+.container {
+    display: flex;
+    align-items: center;  
+    padding-left: 10vw; 
+    width: 35vw; 
+}
+
+.container__titulo {
+    font-size: 2em;
+    padding-left: 1em;
+    font-weight: 700;
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10vw;
+    width: 60vw;
+    
+}
+
+.lista-menu__item {
+    list-style: none;
+    
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    color: var(--cor-da-fonte-principal);
+    padding: 2em;
+
+}
+
+
+/* inicio do home */
+.conteudo {
+    width: 100vw;
+    height: 85vh;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10vw 0 10vw ;
+}
+
+.home__resumo{
+    display: flex;
+    flex-direction: column;
+}
+
+.home__informacao {
+    padding-top: 3em;
+}
+
+.home__texto {
+    font-size: 2em;
+}
+
+.homne__titulo {
+    font-size: 4em;
+    font-weight: 700;
+    padding: .2em 0;
+}
+
+.home__botao {
+    padding: 15vh 8vw;
+    text-decoration: none;
+    justify-content: center;
+
+}
+
+.home__botao_ancora {
+    text-decoration: none;
+    background-color: var(--cinza-secundario);
+    color: var(--branco-principal);
+    padding: 1em;
+    border: 2px solid var(--botao-azul);
+    border-radius: 1em;
+}
+
+.home__botao_ancora:hover {
+    background-color: var(--cor-da-fonte-principal);
+    border: 2px solid var(--cinza-secundario);
+    transition: 0.4s;
+}
+
+.home__icones {
+
+}
+
+.home__icones__lista {
+    display: flex;
+}
+
+.home__icones__link {
+    padding: .5em;
+}
