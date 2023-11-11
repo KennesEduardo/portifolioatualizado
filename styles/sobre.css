@@ -64,71 +64,7 @@ body {
 
 }
 
-
-/* inicio do home */
-.conteudo {
-    width: 97vw;
-}
-
-.home {
-    display: flex;
-    justify-content: space-between;
-    padding: 5vh 10vw 0 10vw ;
-}
-
-.home_img {
-    width: 40vw;
-}
-
-.home__resumo{
-    /* width: 40vw; */
-    display: flex;
-    flex-direction: column;
-}
-
-.home__informacao {
-    padding-top: 3em;
-}
-
-.home__texto {
-    font-size: 2em;
-}
-
-.homne__titulo {
-    font-size: 4em;
-    font-weight: 700;
-    padding: .2em 0;
-}
-
-.home__botao {
-    padding: 15vh 8vw;
-    text-decoration: none;
-    justify-content: center;
-
-}
-
-.home__botao_ancora {
-    text-decoration: none;
-    background-color: var(--cinza-secundario);
-    color: var(--branco-principal);
-    padding: 1em;
-    border: 2px solid var(--botao-azul);
-    border-radius: 1em;
-}
-
-.home__botao_ancora:hover {
-    background-color: var(--cor-da-fonte-principal);
-    border: 2px solid var(--cinza-secundario);
-    transition: 0.4s;
-}
-
-.home__icones__lista {
-    display: flex;
-}
-
-.home__icones__link {
-    padding: .5em;
-}
+/* iniando sobre min  */
 
 .sobre__conteudo {
     background-color: var(--branco-principal);
@@ -139,7 +75,6 @@ body {
     justify-content: space-between;
 }
 .sobre__conteudo_imagens {
-    padding-left: 10vw;
     width: 48.5vw;
     /* border: #167BF7 1px solid; */
 }
@@ -165,48 +100,3 @@ body {
     font-size: 1.2em;
     padding-top: 2em;
 }
-
-/* iniciando footer */
-.footer {
-    padding-top: 2em;
-    width: 6em;
-}
-.footer__conteudo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 1em;
-    width: 97vw;
-    height: 7em; 
-}
-.footer__logo {
-    padding-left: 10vw;
-    width: 48.5vw;
-}
-.footer__logo__img {
-    padding: 1em 0 .5em 3em;
-}
-
-.footer__textocopy {
-    font-size: .7em;
-    color: var(--cinza-secundario);
-}
-
-.footer__descricao {
-    width: 49.5vw;
-    padding-right: 10vw;
-}
-
-.footer__titulo {
-    font-size: 1.4em;
-    font-weight: 700;
-    text-align: end;
-}
-
-.footer__texto {
-    font-size: 1em;
-    color: var(--cor-da-fonte-principal);
-    text-align: end;
-    padding-top: 1em;
-}
-
