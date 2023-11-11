@@ -245,9 +245,13 @@ body {
 }
 
 .portifolio__imagem {
-    width: 25em;
+    width: 25vw;
 }
-
+.portifolio__imagem:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.8);
+}
 .portifolio__titulo_terciario {
     font-size: 2em;
     font-weight: 700;
