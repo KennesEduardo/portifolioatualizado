@@ -207,18 +207,34 @@ body {
     gap: 1em;
 }
 
-.lista-portifolio__item {
+/* .lista-portifolio__item {
     padding: 1em;
     background-color: var(--botao-cinza);
     border: 1px solid var(--branco-principal);
-    border-radius: 10px;
+    
    
-}
+} */
+
+/* .lista-portifolio__item:hover {
+    background-color: var(--cor-da-fonte-principal);
+    color: var(--botao-cinza);
+    
+} */
 
 .lista-portifolio__link {
     text-decoration: none;
     color: var(--cor-da-fonte-principal);
+    border: 1px solid var(--botao-cinza);
+    background-color: var(--botao-cinza);
+    padding: 1em;
+    border-radius: 10px;  
 }
+
+.lista-portifolio__link:hover {
+    color: var(--botao-cinza);
+    background-color: var(--cor-da-fonte-principal);
+} 
+
 
 /* iniciando footer */
 .footer {
