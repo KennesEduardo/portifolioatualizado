@@ -106,9 +106,9 @@ body {
 }
 
 .home__botao {
-    padding: 15vh 8vw;
-    text-decoration: none;
-    justify-content: center;
+    padding: 15vh 0;
+    display: flex;
+    column-gap: 3em;
 
 }
 
@@ -117,22 +117,29 @@ body {
     background-color: var(--cinza-secundario);
     color: var(--branco-principal);
     padding: 1em;
-    border: 2px solid var(--botao-azul);
+    border: 1px solid var(--botao-azul);
     border-radius: 1em;
+    
+
 }
 
 .home__botao_ancora:hover {
     background-color: var(--cor-da-fonte-principal);
-    border: 2px solid var(--cinza-secundario);
+    border: 1px solid var(--cinza-secundario);
     transition: 0.4s;
 }
 
 .home__icones__lista {
     display: flex;
+    padding-left: 8em;
 }
 
 .home__icones__link {
     padding: .5em;
+}
+
+.home__icones__link:hover{
+    transform: scale(1.2);
 }
 
 /* inicio do sobre min */
@@ -247,11 +254,13 @@ body {
 .portifolio__imagem {
     width: 25vw;
 }
+
 .portifolio__imagem:hover {
     transform: scale(1.1);
     transition: .5s;
     box-shadow: 0 1em 2em rgba(0, 0, 0, 0.8);
 }
+
 .portifolio__titulo_terciario {
     font-size: 2em;
     font-weight: 700;
@@ -271,9 +280,66 @@ body {
     background-color: var(--cinza-secundario);
     padding: 1em;
 }
+
 .portifolio__botao:hover {
     background-color: var(--cor-da-fonte-principal);
     transition: .3s;
+}
+
+/* inicio das minhas techs */
+.minhastech {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2em;
+    border: #3c92fa;
+    
+}
+.minhastech__titulos{
+    display: flex;
+    justify-content: center;
+    column-gap: .5em;
+}
+
+.minhastech__titulo_principal {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--cinza-secundario);
+    
+}
+
+.minhastech__titulo_secundario {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.minhastech__descricao {
+    text-align: center;
+
+}
+
+.minhastech__texto {
+    font-size: 1em;
+    padding: 5em 0 1em 0;
+}
+
+.minhastech__texto_secundaria {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.minhastech__texto_destaque {
+    color: var(--cinza-secundario);
+}
+
+.minhastech__imagens {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    column-gap: 5em;
+}
+
+.minhastech__imagem {
+    width: 8em;
 }
 
 /* iniciando footer */
