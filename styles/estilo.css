@@ -2,7 +2,7 @@
 :root{
     --branco-principal: #FFFFFF;
     --cinza-secundario: #263138;
-    --botao-azul: #167BF7;
+    --botao-cinza: #DFDFDF;
     --cor-da-fonte-principal: #445964;
     --fonte-principal: 'Inter', sans-serif;
     --botao-azul-efeito:#3c92fa;
@@ -130,6 +130,8 @@ body {
     padding: .5em;
 }
 
+/* inicio do sobre min */
+
 .sobre__conteudo {
     background-color: var(--branco-principal);
     color: var(--cor-da-fonte-principal);
@@ -164,6 +166,58 @@ body {
 .sobre__texto {
     font-size: 1.2em;
     padding-top: 2em;
+}
+
+/* inicio do portifolio  */
+
+.portifolio {
+    padding-left: 10vw;
+    padding-top: 2em;
+}
+
+.portifolio__conteudo {
+    display: flex;
+    align-items: center;
+}
+
+.portifolio__titulos {
+    width: 15vw;
+}
+
+.portifolio__titulo_principal {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--cinza-secundario);
+    
+}
+
+.portifolio__titulo_secundario {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.portifolio__descricao {
+    width: 15vw;
+    font-size: 1.2em;
+}
+
+.nav__portifolio{
+    padding-top: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.lista-portifolio__item {
+    padding: 1em;
+    background-color: var(--botao-cinza);
+    border: 1px solid var(--branco-principal);
+    border-radius: 10px;
+   
+}
+
+.lista-portifolio__link {
+    text-decoration: none;
+    color: var(--cor-da-fonte-principal);
 }
 
 /* iniciando footer */
