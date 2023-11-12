@@ -264,7 +264,7 @@ body {
 .portifolio__titulo_terciario {
     font-size: 2em;
     font-weight: 700;
-    padding: 1em 0 .2em 0;
+    padding: 2em 0 .2em 0;
     color: var(--cinza-secundario);
 }
 
