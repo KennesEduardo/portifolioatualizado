@@ -502,7 +502,8 @@ button:hover {
     }
 
 }
-@media (max-width:768px) {
+
+@media (max-width:810px) {
     /* sessao menu */
     .container {
         justify-content: center;
@@ -603,4 +604,66 @@ button:hover {
     }
 
 
+
+}
+
+@media(max-width:375px) {
+
+    .lista-menu {
+        display: none;
+    }
+
+    .hamburguer {
+        width: 3rem;
+        height: 2rem;
+        z-index: 5;
+        right: 2rem;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .show-menu  .hamburguer{
+        right: 16rem
+    }
+
+    .linha {
+        width: 100%;
+        height: .1rem;
+        padding: 1px;
+        border-radius: 10px;
+        background-color: rgb(67, 202, 13);
+        box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
+        transition: transform .7s;
+    }
+    
+
+    .show-menu #linha1 {
+        transform: rotate(45deg) translate(.4rem, .9rem);
+        background-color: #001c3d;
+        box-shadow: none;
+    }
+
+    .show-menu #linha2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .show-menu #linha3 {
+        transform: rotate(-42deg) translate(.3rem, -.9rem);
+        background-color: #001c3d;
+        box-shadow: none;
+    }
+
+    .lista-menu {
+        width: 20rem;
+        height: 100vh;
+        background-color: var(--cinza-secundario);
+        box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.788);
+        position: fixed;
+        top: -20rem;
+        transform: all .8s;
+    }
 }

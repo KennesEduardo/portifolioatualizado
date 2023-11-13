@@ -1,8 +1,3 @@
-const botaoMenu = document.querySelector('.cabecalho__menu');
-const menu = document.querySelector('.menu-lateral');
-
-botaoMenu.addEventListener('click', ()=> {
-    menu.classList.toggle('menu-lateral--ativo');
-})
-
- 
+document.querySelector(".hamburguer").addEventListener("click", () =>
+    document.querySelector(".cabecalho").classList.toggle("show-menu")
+);
