@@ -26,7 +26,7 @@ body {
     color: var(--cor-da-fonte-principal);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
     margin-top: 1vw;
     width: 100vw;
     height: 10vh;
@@ -46,10 +46,8 @@ body {
 
 .lista-menu {
     display: flex;
-    justify-content: space-between;
-    padding-right: 10vw;
     width: 55vw;
-    
+
 }
 
 .lista-menu__item {
@@ -86,7 +84,6 @@ body {
 }
 
 .home__resumo{
-    /* width: 40vw; */
     display: flex;
     flex-direction: column;
 }
@@ -174,7 +171,8 @@ body {
 }
 
 .sobre__texto {
-    font-size: 1.2em;
+    text-align: justify;
+    font-size: 1.3em;
     padding-top: 2em;
 }
 
@@ -239,7 +237,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    padding-top: 1em;
 }
 
 .portifolio__link-visualiza {
@@ -252,7 +250,7 @@ body {
 }
 
 .portifolio__imagem {
-    width: 25vw;
+    width: 20vw;
 }
 
 .portifolio__imagem:hover {
@@ -350,7 +348,7 @@ body {
     display: flex;
     justify-content: space-between;
     column-gap: 2em;
-    height: 50vh;
+    height: 30em;
 
 }
 
@@ -379,8 +377,6 @@ body {
 
 .contato__formulario {
     padding: 3em 1.5em;
-    /* border-radius: .5em;
-    box-shadow: 0 0 .7em rgba(0, 0, 0, 0.1); */
 }
 
 .contato__formulario__label {
@@ -455,3 +451,30 @@ button:hover {
     padding-top: 1em;
 }
 
+
+/*Responsividade do site
+    1280 notbook
+    768 tablete
+    320 celular
+*/
+@media (max-width:1280px) {
+
+    /**/
+    .sobre__conteudo {
+        height: 100vh;
+        align-items: center;
+    }
+    .sobre__texto {
+        font-size: 1.1em;
+    }
+
+    /*Sessão portifolio*/
+    .portifolio__conteudo {
+        column-gap: 5em;
+    }
+
+    .portifolio__descricao {
+        width: 25vw;
+    }
+
+}
