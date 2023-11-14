@@ -170,6 +170,7 @@ body {
 
 .sobre__texto {
     text-align: justify;
+    line-height: 1.2em;
     font-size: 1.3em;
     padding-top: 2em;
 }
@@ -489,7 +490,7 @@ button:hover {
 
 }
 
-@media (max-width:810px) {
+@media (max-width:850px) {
     /* sessao menu */
     .container {
         justify-content: center;
