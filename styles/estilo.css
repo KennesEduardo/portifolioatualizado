@@ -287,8 +287,6 @@ body {
 
 /* inicio das minhas techs */
 .minhastech {
-    /* padding-left: 10vw;
-    padding-right: 10vw; */
     padding-top: 2em;
     
 }
@@ -607,7 +605,7 @@ button:hover {
 
 }
 
-@media(max-width:375px) {
+@media(max-width:428px) {
 
     .lista-menu {
         display: none;
@@ -623,6 +621,7 @@ button:hover {
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        padding-right: 10vw;
     }
 
     .show-menu  .hamburguer{
@@ -634,7 +633,7 @@ button:hover {
         height: .1rem;
         padding: 1px;
         border-radius: 10px;
-        background-color: rgb(67, 202, 13);
+        background-color: var(--cor-da-fonte-principal);
         box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
         transition: transform .7s;
     }
@@ -642,7 +641,7 @@ button:hover {
 
     .show-menu #linha1 {
         transform: rotate(45deg) translate(.4rem, .9rem);
-        background-color: #001c3d;
+        background-color: var(--cor-da-fonte-principal);
         box-shadow: none;
     }
 
@@ -653,7 +652,7 @@ button:hover {
 
     .show-menu #linha3 {
         transform: rotate(-42deg) translate(.3rem, -.9rem);
-        background-color: #001c3d;
+        background-color: var(--cor-da-fonte-principal);;
         box-shadow: none;
     }
 
@@ -665,5 +664,104 @@ button:hover {
         position: fixed;
         top: -20rem;
         transform: all .8s;
+    }
+
+
+    /*home*/
+   
+    .home {
+        height: 40em;
+        border: #3cfa65 1px solid; 
+    }
+    .home__resumo {
+        height: auto;
+        padding: 0 10vw 0 10vw;
+    }
+    .home__texto {
+        font-size: 1.2em;
+    }
+    .home__titulo {
+        font-size: 2em;
+    }
+
+    .home__botao_ancora {
+        text-align: center;
+        width: 30vw;
+    }
+     /* sesao sobre conteudo*/
+    .sobre__conteudo{
+        height: auto;
+    }
+    .sobre__titulo {
+        font-size: 2em;
+    }
+
+    .sobre__texto {
+        font-size: 1em;
+    }
+
+    /*sessão portifolio*/
+    .portifolio {
+        border: #263138 1px solid;
+    }
+
+    .portifolio__conteudo{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .portifolio__titulos {
+        width: 80vw;
+    }
+
+    .portifolio__descricao {
+        padding-top: 1em;
+        width: 80vw;
+    }
+
+    .portifolio__link {
+        column-gap: 10em;
+    }
+
+    .portifolio__link-visualiza {
+        padding: 0;
+        
+    }
+
+    .portifolio__imagem {
+        padding-top: 1em;
+        width: 100%;
+    }
+
+    .portifolio__titulo_terciario {
+        font-size: 1.7em;
+    }
+
+    .portifolio__texto {
+        font-size: 1em;
+    }
+
+    /*minhastech*/
+
+    .minhastech {
+        border: #3cfa65 1px solid;
+    }
+     
+    .minhastech__titulo_principal,
+    .minhastech__titulo_secundario{
+        font-size: 2.5em;
+    }
+
+    .minhastech__texto,
+    .minhastech__texto_secundaria {
+        font-size: 1.2em;
+    }
+    .minhastech__imagens {
+        flex-wrap: wrap;
+    }
+
+    .minhastech__imagem {
+        width: 40%;
+        padding-bottom: 2em;
     }
 }
