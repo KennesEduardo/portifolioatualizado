@@ -66,8 +66,6 @@ body {
     text-decoration: underline;
 }
 
-
-
 /* inicio do home */
 .conteudo {
     width: 100vw;
@@ -140,7 +138,6 @@ body {
 }
 
 /* inicio do sobre min */
-
 .sobre__conteudo {
     background-color: var(--branco-principal);
     color: var(--cor-da-fonte-principal);
@@ -198,7 +195,6 @@ body {
     font-size: 3em;
     font-weight: 700;
     color: var(--cinza-secundario);
-    
 }
 
 .portifolio__titulo_secundario {
@@ -290,7 +286,7 @@ body {
     padding-top: 2em;
     
 }
-.minhastech__titulos{
+.minhastech__titulos {
     display: flex;
     justify-content: center;
     column-gap: .5em;
@@ -340,7 +336,6 @@ body {
 
 /* Inicio da pagina contato*/
 .contato {
-    
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 3em;
@@ -353,8 +348,7 @@ body {
 
 .contato__info {
     align-items: center;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .contato__titulo {
@@ -450,12 +444,6 @@ button:hover {
     padding-top: 1em;
 }
 
-
-/*Responsividade do site
-    1280 notbook
-    768 tablete
-    320 celular
-*/
 @media (max-width:1280px) {
 
     /**/
@@ -547,7 +535,7 @@ button:hover {
     /* sessão sobre min */
     .sobre__conteudo{
         flex-direction: column-reverse;
-        padding: 2em 0 0 0;
+        padding: 3em 0 0 0;
         height: 50em;
     }
     .sobre__descricao{
@@ -638,7 +626,6 @@ button:hover {
         transition: transform .7s;
     }
     
-
     .show-menu #linha1 {
         transform: rotate(45deg) translate(.4rem, .9rem);
         background-color: var(--cor-da-fonte-principal);
@@ -664,14 +651,12 @@ button:hover {
         position: fixed;
         top: -20rem;
         transform: all .8s;
+        display: hidden;
     }
 
-
     /*home*/
-   
     .home {
-        height: 40em;
-        border: #3cfa65 1px solid; 
+        height: auto;
     }
     .home__resumo {
         height: auto;
@@ -688,7 +673,8 @@ button:hover {
         text-align: center;
         width: 30vw;
     }
-     /* sesao sobre conteudo*/
+    
+    /* sesao sobre conteudo*/
     .sobre__conteudo{
         height: auto;
     }
@@ -701,10 +687,6 @@ button:hover {
     }
 
     /*sessão portifolio*/
-    .portifolio {
-        border: #263138 1px solid;
-    }
-
     .portifolio__conteudo{
         flex-direction: column;
         padding: 0;
@@ -725,7 +707,6 @@ button:hover {
 
     .portifolio__link-visualiza {
         padding: 0;
-        
     }
 
     .portifolio__imagem {
@@ -741,12 +722,7 @@ button:hover {
         font-size: 1em;
     }
 
-    /*minhastech*/
-
-    .minhastech {
-        border: #3cfa65 1px solid;
-    }
-     
+    /*sessão minhastech*/
     .minhastech__titulo_principal,
     .minhastech__titulo_secundario{
         font-size: 2.5em;
@@ -755,13 +731,54 @@ button:hover {
     .minhastech__texto,
     .minhastech__texto_secundaria {
         font-size: 1.2em;
+        padding: .5em
     }
     .minhastech__imagens {
         flex-wrap: wrap;
+        padding-top: 3em;
     }
 
     .minhastech__imagem {
         width: 40%;
         padding-bottom: 2em;
+        padding-left: .5em;
     }
+
+    /*sessão  contato*/
+    .contato {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contato__info {
+        padding-top: 0;
+    }
+
+    /* footer*/
+    .footer__nav {
+        flex-direction: column-reverse;
+    }
+
+    .footer__descricao {
+        width: 80vw;
+        padding: 0;
+    }
+
+    .footer__texto {
+        text-align: center;
+    }
+
+    .footer__logo {
+        padding: 1em;
+        width: 80vw;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__logo__img {
+        padding: .5em 0;
+    }
+    
 }

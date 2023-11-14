@@ -10,7 +10,6 @@
 <body>
 
     <header class="cabecalho">
-        
         <div class="container">
             <a href="#"><img src="Imagens/logo.png" alt="icone com sinal de menos e anterline "></a>
             <h1 class="container__titulo">Kennes Eduardo</h1>
@@ -21,18 +20,17 @@
             <span class="linha" id="linha3"></span>
         </div>
         <ul class="lista-menu">
-            <li class="lista-menu__item"> <a href="#" class="lista-menu__link">Home</a> </li>
-            <li class="lista-menu__item"> <a href="#" class="lista-menu__link">Sobre</a> </li>
-            <li class="lista-menu__item"> <a href="#" class="lista-menu__link">Portifolio</a> </li>
-            <li class="lista-menu__item"> <a href="#" class="lista-menu__link">Minhas Techs</a> </li>
-            <li class="lista-menu__item"> <a href="#" class="lista-menu__link">Contato</a> </li>
+            <li class="lista-menu__item"> <a href="#home" class="lista-menu__link">Home</a> </li>
+            <li class="lista-menu__item"> <a href="#sobre" class="lista-menu__link">Sobre</a> </li>
+            <li class="lista-menu__item"> <a href="#portifolio" class="lista-menu__link">Portifolio</a> </li>
+            <li class="lista-menu__item"> <a href="#minhastech" class="lista-menu__link">Minhas Techs</a> </li>
+            <li class="lista-menu__item"> <a href="#contato" class="lista-menu__link">Contato</a> </li>
         </ul>
 
     </header>
     
     <main class="conteudo">
-
-        <section class="home">
+        <section class="home" id="home">
             <div class="home__resumo">
                 <div class="home__informacao">
                     <p class="home__texto">Olá pessoal, </p>
@@ -41,8 +39,8 @@
                 </div>
 
                 <div class="home__botao">
-                    <a href="#" class="home__botao_ancora">Sobre mim</a>
-                    <a href="#" class="home__botao_ancora">Acessar currículo</a>
+                    <a href="#sobre" class="home__botao_ancora">Sobre mim</a>
+                    <a href="Imagens/KennesCurriculum.pdf" download="KennesCurriculum.pdf" class="home__botao_ancora">Acessar currículo</a>
                 </div>
 
                 <div class="home__icones">
@@ -58,7 +56,9 @@
             </div>
         </section>
 
-        <section class="sobre__conteudo">
+        
+        <section class="sobre__conteudo" id="sobre">
+
             <div class="sobre__conteudo_imagens">
                 <img src="Imagens/KennesEduardo.png" alt="Foto de Kennes Eduardo" class="sobre__conteudo_imagem">
             </div>
@@ -72,7 +72,7 @@
             </div>
         </section>
 
-        <section class="portifolio">
+        <section class="portifolio" id="portifolio">
 
             <div> 
                 <div class="portifolio__conteudo">
@@ -147,7 +147,7 @@
             </div>
         </section>
 
-        <section class="minhastech">
+        <section class="minhastech" id="minhastech">
             <div class="minhastech__titulos">
                 <h2 class="minhastech__titulo_principal">Minhas</h2>
                 <h2 class="minhastech__titulo_secundario">Techs</h2>
@@ -175,7 +175,7 @@
             </div>
         </section>
 
-        <section class="contato">
+        <section class="contato" id="contato">
             <div class="contato__info">
                 <h3 class="contato__titulo">Entre em contato</h3>
                 <p class="contato__texto">Envie-me uma mensagem, e estarei prontamente disponível para responder. Além disso, é possível contatar-me pelos meios indicados abaixo.</p>
